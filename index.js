@@ -1,6 +1,6 @@
 
 function displayFood() {
-    const foodssDiv = document.getElementById('foods').innerText;
+    const foodssDiv = document.getElementById('foods');
     const inputFood = document.getElementById('input-foodName').value;
    
     fetch(` https://www.themealdb.com/api/json/v1/1/search.php?f=${inputFood}`)
@@ -12,8 +12,17 @@ function displayFood() {
         for (let i = 0; i < meals.length; i++) {
             const mealsName = meals[i];
             console.log(mealsName.strMeal);
-            document.getElementById('foods').innerText = mealsName.strMeal ;
             
+            
+
+            const foodsDiv = document.createElement('div');
+            const foodsInfo = `
+            <img src=${mealsName.strMealThumb}>
+             <h3>${mealsName.strMeal}</h3>
+            `;
+            foodsDiv.innerHTML = foodsInfo;
+            foodssDiv.appendChild(foodsDiv);
+           
         }
     }
 

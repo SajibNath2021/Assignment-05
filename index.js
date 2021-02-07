@@ -8,7 +8,7 @@ function displayFood() {
     .then(data => display(data.meals))
     
     const  display = meals=>{
-           
+        allFoodsDiv.innerText ="";
         meals.forEach(mealsName => {
             const foodsDiv = document.createElement('div');
             foodsDiv.className = "food";
@@ -22,9 +22,12 @@ function displayFood() {
             foodsDiv.innerHTML = foodsInfo;
             allFoodsDiv.appendChild(foodsDiv);
         });
+        
         document.getElementById('input-foodName').value = "";
+        
        
     }
+    
     
      
 }

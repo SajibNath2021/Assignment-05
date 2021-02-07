@@ -17,3 +17,10 @@
 #foods img{
     width: 100%;
 }
+#foodDetails{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#foodDetails img{
+  width: 20%;
+}

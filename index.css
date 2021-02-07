@@ -1,4 +1,6 @@
-
+body{
+    background-color: tomato;
+}
 .food{
     
     border-radius: 20px;
@@ -30,6 +32,7 @@
     background-color: lightgray;
     border: none;
 }
+
 #foodDetails img{
   width: 30%;
 }
@@ -38,4 +41,5 @@
     border-radius: 20px;
     padding: 20px;
     text-align: left;
+    
 }

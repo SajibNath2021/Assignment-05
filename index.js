@@ -46,16 +46,16 @@ function displayFood() {
          foodDiv.innerHTML =`
          <img src = ${food.strMealThumb}>
          <h3>${food.strMeal}</h3>
-         <p>Ingredient No1 : ${food.strIngredient1}<p>
-         <p>Ingredient No2 : ${food.strIngredient2}<p>
-         <p>Ingredient No3 : ${food.strIngredient3}<p>
-         <p>Ingredient No4 : ${food.strIngredient4}<p>
-         <p>Ingredient No5 : ${food.strIngredient5}<p>
-         <p>Ingredient No6 : ${food.strIngredient6}<p>
-         <p>Ingredient No7 : ${food.strIngredient7}<p>
-         <p>Ingredient No8 : ${food.strIngredient8}<p>
-         <p>Ingredient No9 : ${food.strIngredient9}<p>
-         <p>Ingredient No10 : ${food.strIngredient10}<p>
+         <p> No1 : ${food.strIngredient1}<p>
+         <p> No2 : ${food.strIngredient2}<p>
+         <p> No3 : ${food.strIngredient3}<p>
+         <p> No4 : ${food.strIngredient4}<p>
+         <p> No5 : ${food.strIngredient5}<p>
+         <p> No6 : ${food.strIngredient6}<p>
+         <p> No7 : ${food.strIngredient7}<p>
+         <p> No8 : ${food.strIngredient8}<p>
+         <p> No9 : ${food.strIngredient9}<p>
+         <p> No10 : ${food.strIngredient10}<p>
          `
     }
 

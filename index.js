@@ -14,8 +14,9 @@ function displayFood() {
             console.log(mealsName.strMeal);
             
             
-
+             
             const foodsDiv = document.createElement('div');
+            foodsDiv.className = "food";
             const foodsInfo = `
             <img src=${mealsName.strMealThumb}>
              <h3>${mealsName.strMeal}</h3>
@@ -26,34 +27,7 @@ function displayFood() {
         }
     }
 
-    //  const displayFood = meals=>{
-         
-    //         console.log(meals[0].strMeal);
-    //     //    document.getElementById('foods').innerText  = meals[0].strMeal;
     
-    
-    
-    
-           
-             
-    //          const mealsName = meals.strMeal;
-    //          console.log(mealsName);
-    //        //  document.getElementById('foods').innerText = mealsName;
-             
-             
-        
-        //  for (let i = 0; i <= meals.length; i++) {
-        //         const mealsName = meals[i].strMeal;
-        //        console.log(mealsName);
-        //     document.getElementById('foods').innerText = mealsName;
-        //     // const foodsDiv = document.createElement('div');
-        //     // const foodsInfo = `
-        //     // <h3>${mealsName.strMeal}</h3>
-        //     // `;
-        //     // foodsDiv.innerHTML = foodsInfo;
-        //     // foodssDiv.appendChild(foodsDiv);
-            
-         }
      
-// }
+}
 

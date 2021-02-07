@@ -6,7 +6,7 @@ function displayFood() {
     fetch(` https://www.themealdb.com/api/json/v1/1/search.php?f=${inputFood}`)
     .then(res => res.json())
     .then(data => display(data.meals))
-     
+    
     const  display = meals=>{
            
         meals.forEach(mealsName => {
@@ -22,6 +22,7 @@ function displayFood() {
             foodsDiv.innerHTML = foodsInfo;
             allFoodsDiv.appendChild(foodsDiv);
         });
+        document.getElementById('input-foodName').value = "";
        
     }
     

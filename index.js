@@ -13,9 +13,11 @@ function displayFood() {
             const foodsDiv = document.createElement('div');
             foodsDiv.className = "food";
             const foodsInfo = `
-            <img src=${mealsName.strMealThumb}>
+            
+             <button onclick = "displayFoodDetails('${mealsName.idMeal}')" >
+             <img src=${mealsName.strMealThumb}>
              <h3>${mealsName.strMeal}</h3>
-             <button onclick = "displayFoodDetails('${mealsName.idMeal}')" >details</button>
+             </button>
             `;
             foodsDiv.innerHTML = foodsInfo;
             allFoodsDiv.appendChild(foodsDiv);

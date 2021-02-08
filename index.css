@@ -47,3 +47,10 @@ body{
     color: white;
     text-align: center;
 }
+button{
+    border: none;
+    border-radius: 10px;
+}
+button img{
+    border-radius: 10px;
+}

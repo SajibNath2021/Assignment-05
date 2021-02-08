@@ -20,7 +20,7 @@ function displayFood() {
             
              <button onclick = "displayFoodDetails('${mealsName.idMeal}')" >
              <img src=${mealsName.strMealThumb}>
-             <h3>${mealsName.strMeal}</h3>
+             <h5>${mealsName.strMeal}</h5>
              </button>
             `;
             foodsDiv.innerHTML = foodsInfo;

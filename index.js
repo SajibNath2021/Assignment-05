@@ -9,7 +9,7 @@ function displayFood() {
     fetch(` https://www.themealdb.com/api/json/v1/1/search.php?f=${inputFood}`)
     .then(res => res.json())
     .then(data => display(data.meals))
-    .catch(error => displayError("something wrong!!! try again..."))
+    .catch(error => displayError("Sorry, Invalid Food!!! Plz try again..."))
     
     const  display = meals=>{
         errorTag.innerText = "";

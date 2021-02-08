@@ -52,16 +52,16 @@ function displayFood() {
          <img src = ${food.strMealThumb}>
          <h3>${food.strMeal}</h3>
          <h5>Meal Ingredient</h5>
-         <p> No1 : ${food.strIngredient1}<p>
-         <p> No2 : ${food.strIngredient2}<p>
-         <p> No3 : ${food.strIngredient3}<p>
-         <p> No4 : ${food.strIngredient4}<p>
-         <p> No5 : ${food.strIngredient5}<p>
-         <p> No6 : ${food.strIngredient6}<p>
-         <p> No7 : ${food.strIngredient7}<p>
-         <p> No8 : ${food.strIngredient8}<p>
-         <p> No9 : ${food.strIngredient9}<p>
-         <p> No10 : ${food.strIngredient10}<p>
+         <p> No1 :  ${food.strIngredient1} (${food.strMeasure1})<p>
+         <p> No2 : ${food.strIngredient2} (${food.strMeasure2})<p>
+         <p> No3 : ${food.strIngredient3} (${food.strMeasure3})<p>
+         <p> No4 : ${food.strIngredient4} (${food.strMeasure4})<p>
+         <p> No5 : ${food.strIngredient5} (${food.strMeasure5})<p>
+         <p> No6 : ${food.strIngredient6} (${food.strMeasure6})<p>
+         <p> No7 : ${food.strIngredient7} (${food.strMeasure7})<p>
+         <p> No8 : ${food.strIngredient8} (${food.strMeasure8})<p>
+         <p> No9 : ${food.strIngredient9} (${food.strMeasure9})<p>
+         <p> No10 : ${food.strIngredient10} (${food.strMeasure10})<p>
          `
     }
 

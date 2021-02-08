@@ -6,7 +6,7 @@ function displayFood() {
     const inputFood = document.getElementById('input-foodName').value;
     const errorTag = document.getElementById('error-message');
    
-    fetch(` https://www.themealdb.com/api/json/v1/1/search.php?=${inputFood}`)
+    fetch(` https://www.themealdb.com/api/json/v1/1/search.php?s=${inputFood}`)
     .then(res => res.json())
     .then(data => display(data.meals))
     .catch(error => displayError("Sorry, Invalid Food!!! Plz try again..."))

@@ -1,5 +1,6 @@
+// start
+
 const inputFood = document.getElementById('input-foodName').value;
-// if(typeof inputFood === 'String'){}
 function displayFood() {
     const allFoodsDiv = document.getElementById('foods');
     const inputFood = document.getElementById('input-foodName').value;
@@ -75,6 +76,6 @@ function displayFood() {
         foodDiv.innerText = "";
     }
     
-
+    // end 
     //thnq
 

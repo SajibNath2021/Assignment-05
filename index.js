@@ -1,13 +1,17 @@
-
+const inputFood = document.getElementById('input-foodName').value;
+// if(typeof inputFood === 'String'){}
 function displayFood() {
     const allFoodsDiv = document.getElementById('foods');
     const inputFood = document.getElementById('input-foodName').value;
+    const errorTag = document.getElementById('error-message');
    
     fetch(` https://www.themealdb.com/api/json/v1/1/search.php?f=${inputFood}`)
     .then(res => res.json())
     .then(data => display(data.meals))
+    .catch(error => displayError("something wrong!!! try again later..."))
     
     const  display = meals=>{
+        errorTag.innerText = "";
         allFoodsDiv.innerText ="";
         meals.forEach(mealsName => {
             const foodsDiv = document.createElement('div');
@@ -58,6 +62,18 @@ function displayFood() {
          <p> No10 : ${food.strIngredient10}<p>
          `
     }
+
+    const displayError = error =>{
+        const errorTag = document.getElementById('error-message');
+        errorTag.innerText = error;
+
+        const allFoodsDiv = document.getElementById('foods');
+        allFoodsDiv.innerText = "";
+
+        const foodDiv = document.getElementById('foodDetails');
+        foodDiv.innerText = "";
+    }
+    
 
     //thnq
 

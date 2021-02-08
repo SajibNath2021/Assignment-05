@@ -43,3 +43,7 @@ body{
     text-align: left;
     
 }
+#error-message{
+    color: white;
+    text-align: center;
+}
